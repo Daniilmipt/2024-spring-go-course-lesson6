@@ -71,7 +71,7 @@ func TestUsersRoutes(t *testing.T) {
 			w := httptest.NewRecorder()
 
 			body := `{
-				"name": "Пользователь 1"
+				"name": "user"
 			}`
 			req, _ := http.NewRequest(http.MethodPost, "/users", bytes.NewReader([]byte(body)))
 			req.Header.Add("Content-Type", "application/json")
